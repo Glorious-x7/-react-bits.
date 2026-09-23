@@ -1,13 +1,38 @@
+:root {
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+
+  color-scheme: dark;
+}
+
 html,
 body,
 #root {
+  width: 100%;
   min-height: 100%;
 }
 
 html {
-  background: #050508;
+  background: #050507;
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
 }
 
 button {
-  font-family: inherit;
+  outline: none;
+}
+
+::selection {
+  color: white;
+  background: #6d28d9;
 }

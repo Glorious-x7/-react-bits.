@@ -2,22 +2,22 @@ import './ElectricBorder.css'
 
 function ElectricBorder({
   children,
-  color = '#5227FF',
+  color = '#8b5cf6',
   speed = 1,
-  chaos = 0.5,
-  borderRadius = 16
+  borderRadius = 20
 }) {
   return (
     <div
       className="electric-border"
       style={{
         '--electric-color': color,
-        '--electric-speed': `${2 / speed}s`,
-        '--electric-chaos': chaos,
-        borderRadius: `${borderRadius}px`
+        '--electric-speed': `${3 / speed}s`,
+        '--electric-radius': `${borderRadius}px`
       }}
     >
-      <div className="electric-border-content">
+      <div className="electric-glow"></div>
+
+      <div className="electric-content">
         {children}
       </div>
     </div>

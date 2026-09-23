@@ -2,14 +2,19 @@ import './Footer.css'
 
 function Footer() {
   return (
-    <footer className="footer" id="contato">
+    <footer className="footer">
+      <a href="#inicio" className="footer-logo">
+        <span>R</span>
+        React Project
+      </a>
+
       <p>
-        Projeto desenvolvido com React, Vite e React Bits.
+        Desenvolvido com React + Vite
       </p>
 
-      <span>
-        Trabalho de Informática
-      </span>
+      <p className="copyright">
+        © 2026 • Trabalho de Informática
+      </p>
     </footer>
   )
 }

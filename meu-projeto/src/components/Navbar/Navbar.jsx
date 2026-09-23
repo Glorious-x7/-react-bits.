@@ -1,16 +1,56 @@
+import { useState } from 'react'
 import './Navbar.css'
 
 function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false)
+
+  function fecharMenu() {
+    setMenuOpen(false)
+  }
+
   return (
     <header className="navbar">
-      <h2>React Bits</h2>
+      <a href="#inicio" className="navbar-logo">
+        <div className="logo-icon">R</div>
 
-      <nav>
-        <a href="#inicio">Início</a>
-        <a href="#projeto">Projeto</a>
-        <a href="#tecnologias">Tecnologias</a>
-        <a href="#contato">Contato</a>
+        <div>
+          <strong>React</strong>
+          <span>Project</span>
+        </div>
+      </a>
+
+      <nav className={menuOpen ? 'nav-open' : ''}>
+        <a href="#inicio" onClick={fecharMenu}>
+          Início
+        </a>
+
+        <a href="#projeto" onClick={fecharMenu}>
+          Projeto
+        </a>
+
+        <a href="#tecnologias" onClick={fecharMenu}>
+          Tecnologias
+        </a>
+
+        <a href="#funcionamento" onClick={fecharMenu}>
+          Processo
+        </a>
+
+        <a
+          href="#contato"
+          className="nav-button"
+          onClick={fecharMenu}
+        >
+          Explorar
+        </a>
       </nav>
+
+      <button
+        className="menu-button"
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
+        {menuOpen ? '✕' : '☰'}
+      </button>
     </header>
   )
 }

@@ -1,0 +1,52 @@
+.tech-card {
+  width: 260px;
+  min-height: 220px;
+
+  padding: 30px;
+
+  text-align: center;
+
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.04);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  backdrop-filter: blur(10px);
+
+  transition:
+    transform 0.25s,
+    border-color 0.25s,
+    box-shadow 0.25s;
+}
+
+.tech-card:hover {
+  transform: translateY(-8px);
+
+  border-color: rgba(124, 58, 237, 0.7);
+
+  box-shadow:
+    0 15px 40px rgba(124, 58, 237, 0.15);
+}
+
+.tech-icon {
+  font-size: 38px;
+
+  margin-bottom: 16px;
+}
+
+.tech-card h3 {
+  margin: 0 0 12px;
+
+  font-size: 22px;
+}
+
+.tech-card p {
+  margin: 0;
+
+  color: #a1a1aa;
+
+  line-height: 1.6;
+
+  font-size: 14px;
+}

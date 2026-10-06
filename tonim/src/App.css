@@ -1,0 +1,19 @@
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #101018;
+}
+
+.botao {
+  padding: 20px 50px;
+  background: #ffffff;
+  color: #111;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
